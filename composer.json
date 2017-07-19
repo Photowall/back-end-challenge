@@ -1,0 +1,9 @@
+{
+    "name": "photowall/back-end-challenge",
+    "require": {
+        "phpunit/phpunit": "*"
+    },
+    "autoload": {
+        "classmap": ["src/"]
+    }
+}
