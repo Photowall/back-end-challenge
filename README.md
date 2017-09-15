@@ -17,12 +17,10 @@ Rules
 
 Tasks
 -----
-Your task is to implement all use-cases in the list below. For each case you need to write at least one unit-test. We have provided you with
-some sample code to help explain how the code should work however these are just examples and you do not need to follow them strictly.
+Your task is to implement all use-cases in the list below. For each case you need to write at least one unit-test. We have provided you with some sample code to help explain how the code should work however these are just examples and you do not need to follow them strictly.
 
 #### Add products to the cart
-It should be possible to create products and add them to the cart. The addItem method should take two arguments, product and quantity.
-The quantity parameter should be optional and default to 1.
+It should be possible to create products and add them to the cart. The addItem method should take two arguments, product and quantity. The quantity parameter should be optional and default to 1.
 
 ```
 $cart = new Cart();
@@ -33,8 +31,7 @@ $cart->addItem($apple, 2); //Add 2 more apples
 ```
 
 #### Delete products from the cart
-It should be possible to delete products from the cart. The delete method should also take an optional quantity parameter where you can specify
-how many items you want to delete (default is to delete all items of that type). If the user tries to delete an product that does not exists the application should throw some kind of error.
+It should be possible to delete products from the cart. The delete method should also take an optional quantity parameter where you can specify how many items you want to delete (default is to delete all items of that type). If the user tries to delete an item that does not exists the application should throw some kind of error.
 
 #### Get cart totals
 Add two methods to the cart. One should return total numbers of items and the other one should return the total cost of all items.
@@ -54,14 +51,13 @@ It should be possible to add a discount (in percent) to the cart
 
 ```
 $cart = new Cart();
-$cart->addItem(new Product(1, "Apple", "10"));
+$cart->addItem(new Product(1, "Banana", "10"));
 $cart->addDiscount(0.10); //Add a 10% discount to all items in the cart
 $cart->getTotalCost(); //Should return 9
 ```
 
 #### Save and load cart
-In the final task you should add functionality to save and load the cart to a string. On a real site this can be used to store the cart to the
-session or in the database.
+In the final task you should add functionality to save and load the cart to a string. On a real site this can be used to store the cart in the session or in the database.
 
 ```
 //Save cart sample
