@@ -51,7 +51,7 @@ It should be possible to add a discount (in percent) to the cart
 
 ```
 $cart = new Cart();
-$cart->addItem(new Product(1, "Banana", "10"));
+$cart->addItem(new Product(1, "Banana", 10));
 $cart->addDiscount(0.10); //Add a 10% discount to all items in the cart
 $cart->getTotalCost(); //Should return 9
 ```
